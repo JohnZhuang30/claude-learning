@@ -51,3 +51,10 @@ Early scaffold — package structure and tooling are set up; API client code is 
 ```bash
 python src/claude_learning/api.py
 ```
+
+## Testing
+
+Run tests with:
+```bash
+pytest
+```
