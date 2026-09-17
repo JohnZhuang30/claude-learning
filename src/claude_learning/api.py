@@ -1,15 +1,17 @@
 """
 Claude Learning API module.
-This module demonstrates basic API structure with error handling.
+This module demonstrates basic API structure.
 """
+
+import logging
+
+# Set up logging for the application
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def hello_claude():
     """Return a greeting."""
-    try:
-        return "Hello, Claude!"
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
+    return "Hello, Claude!"
 
 if __name__ == "__main__":
     result = hello_claude()
