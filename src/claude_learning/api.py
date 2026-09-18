@@ -20,6 +20,9 @@ def hello_claude():
 
 def greet_user(name: str) -> str:
     """Return a personalized greeting."""
+    if not name or not name.strip():
+        logger.warning("greet_user called with empty name")
+        return "Hello, stranger! Welcome to Claude Learning."
     logger.info(f"greet_user called with name={name}")
     return f"Hello, {name}! Welcome to Claude Learning."
 
