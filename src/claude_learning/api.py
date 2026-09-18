@@ -18,6 +18,11 @@ def hello_claude():
         logger.error(f"Error: {e}")
         return None
 
+def greet_user(name: str) -> str:
+    """Return a personalized greeting."""
+    logger.info(f"greet_user called with name={name}")
+    return f"Hello, {name}! Welcome to Claude Learning."
+
 if __name__ == "__main__":
     result = hello_claude()
     if result:
